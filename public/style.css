@@ -1,29 +1,40 @@
 body{
     margin: 0;
-    padding: 5rem 0 0;
+    padding: 4em 0 0;
     color: #666666;
     font-family: sans-serif;
+    font-size: 0.8em;
 }
 
+@media (min-width: 1000px){
+    .container{
+        font-size: 1rem;
+    }
+}   
+@media (min-width: 1800px){
+    .container{
+        font-size: 1.5rem;
+    }
+}
+
+
 .container{
-    padding: 5rem 4rem 10rem;
+    padding: 5em 10%;
+    box-sizing: border-box;
+    overflow: hidden;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: hidden;
-    box-sizing: border-box;
-}
+} 
+
 
 
 .container-info{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 5rem;
-}
-
-.fas{
-    font-size: 2rem;
+    padding-top: 5em;
 }
 
 
@@ -36,20 +47,21 @@ body{
 #scrollTop {
     display: none;
     position: fixed;
-    bottom: 3rem;
-    right: 3rem;
+    bottom: 50px;
+    right: 10%;
     z-index: 99;
 
     background-color: #666666e5;
     color: white;
+    font-size: 2em;
     border-radius: 50%;
 
     justify-content: center;
     align-items: center;
 
-    height: 4rem;
-    width: 4rem;
-  }
+    height: 2.5em;
+    width: 2.5em;
+}  
 
 
 
@@ -65,9 +77,9 @@ body{
 .menu{
     position: fixed;
     top: 0;
-    height: 5rem;
+    height: 5em;
     width: 100%;
-    padding: 0.5rem 3rem;
+    padding: 0.5em 3em;
     box-sizing: border-box;
 
     display: flex;
@@ -76,6 +88,7 @@ body{
 
     background-color: white;   
     font-weight: bold;
+    font-size: 1em;
     border-bottom: 3px solid #a8a8a8;
     z-index: 999;
 }
@@ -86,10 +99,6 @@ body{
 
 .menu-logo img{
     height: 100%;
-}
-
-.menu-button{
-    display: none;
 }
 
 .navbar{
@@ -110,7 +119,7 @@ body{
 }
 
 .menu-ul li a{
-    padding: 0 1rem;
+    padding: 0 1em;
     text-decoration: none;
     text-transform: uppercase;
     color: #666666;
@@ -121,7 +130,9 @@ body{
 }
 
 .menu-contact{
-    padding: 0 1rem;
+    padding: 0 1em;
+    display: flex;
+    align-items: center;
 }
 
 .menu-contact a{
@@ -133,14 +144,28 @@ body{
     color: #5cbbbe;
 }
 
+.menu i{
+    font-size: 2em;
+}
+
 .menu-contact-text{
     display: inline-block;
     text-decoration: none;
-    padding-left: 1rem;
+    padding-left: 1em;
+}
+
+.menu-button{
+    display: none;
+    padding-left: 1em;
 }
 
 @media (max-width: 1000px){
+    .menu{
+        font-size: 0.8em;
+    }
+}
 
+@media (max-width: 700px){
     .menu-ul,
     .menu-contact-text{
         display: none;
@@ -154,9 +179,10 @@ body{
     display: flex;
     justify-content: flex-end;
     position: absolute;
-    top: 5rem;
+    top: 5em;
     left: 0;
     right: 0;
+    padding-right: 3em;
     height: 50px;
     background-color: white;
     border-bottom: 3px solid #a8a8a8;
@@ -183,7 +209,7 @@ body{
 
 .slider{
     position: relative;    
-    height: 100vh;
+    height: 90vh;
     min-height: 600px;
 }
 
@@ -212,7 +238,7 @@ body{
     top: 15%;
     
     text-align: center;
-    font-size: 5rem;
+    font-size: 5em;
 
     color: #666666;
     font-weight: bold;
@@ -234,14 +260,14 @@ body{
 }
 
 .slider-text{
-    margin: 1.5rem 3rem;
+    margin: 1.5em 3em;
     color: white;
 }
 
 .slider-prev,
 .slider-next{
     position: absolute;
-    width: 5%;
+    width: 10%;
     height: 100%;
     z-index: 2;
 
@@ -253,6 +279,11 @@ body{
 .slider-prev:hover,
 .slider-next:hover{
     background-color: #a8a8a84b;
+}
+
+.slider-prev i,
+.slider-next i{
+    font-size: 2em;
 }
 
 .slider-prev{
@@ -299,7 +330,7 @@ body{
 }
 
 .about-list li{
-    margin: 0.5rem 4rem;
+    margin: 0.5em 4em;
 }
 
 
@@ -331,7 +362,7 @@ body{
     flex-direction: column;
     align-items: stretch;
 
-    margin: 0 2rem;
+    margin: 0 2em;
     background-color: hsla(182, 43%, 55%, 0.7);
 }
 
@@ -341,7 +372,7 @@ body{
 }
 
 .service-img{
-    height: 10rem;
+    height: 10em;
     text-align: center;
 }
 
@@ -358,7 +389,7 @@ body{
 }
 
 .service-container li{
-    margin: 0.5rem 1rem 0.5rem 0;
+    margin: 0.5em 1em 0.5em 0;
 }
 
 
@@ -416,7 +447,7 @@ body{
 
 .contact-phone i,
 .contact-address i{
-    padding-bottom: 1rem;
+    padding-bottom: 1em;
 }
 
 .contact-map,
@@ -471,7 +502,7 @@ footer ul{
     .service-container,
     .comment-container,
     .contact-phone{
-        margin-bottom: 6rem;
+        margin-bottom: 6em;
         width: 100%;
     }
 
