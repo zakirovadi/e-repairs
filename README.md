@@ -3,7 +3,7 @@ Landing page for repair service
 
 ## I mastered:
   * HTML
-  * CSS
+  * CSS/Sass
   * CSS flexbox
   * CSS media queries
   * ES6
