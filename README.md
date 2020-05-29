@@ -2,11 +2,11 @@
 Landing page for repair service
 
 ## I mastered:
+  * Native JavaScript ES6+
   * HTML
   * CSS
   * CSS flexbox
   * CSS media queries
-  * ES6
   * work with DOM elements
   * positioning elements
 
